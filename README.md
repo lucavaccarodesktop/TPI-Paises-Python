@@ -13,10 +13,10 @@ Aplicación de consola desarrollada en **Python 3** que permite gestionar un dat
 
 ## 👩‍💻 Integrantes
 
-| Nombre completo | Legajo |
+| Nombre completo |
 |---|---|
-| [Tu nombre aquí] | [Tu legajo] |
-| [Nombre de tu compañera] | [Su legajo] |
+| [] | [] |
+| ] | [] |
 
 ---
 
