@@ -17,6 +17,9 @@ CAMPOS = ["nombre", "poblacion", "superficie", "continente"]
 # LECTURA Y ESCRITURA DEL ARCHIVO CSV
 # ============================================================
 
+# Esta función básicamente recorre el CSV línea por línea
+# y arma un diccionario por cada país. Si una fila tiene un campo vacío
+# o un dato que no es número, no rompe el programa: la salta y avisa.
 def cargar_paises(archivo):
     """
     Lee el archivo CSV y retorna una lista de diccionarios.
@@ -142,13 +145,13 @@ def agregar_pais(paises):
     continente = pedir_texto("  Continente: ")
 
     paises.append({
-        "nombre":     nombre,
-        "poblacion":  poblacion,
+        "nombre": nombre,
+        "poblacion": poblacion,
         "superficie": superficie,
         "continente": continente
     })
-
-    print(f"  [OK] País '{nombre}' agregado correctamente.")
+    guardar_paises(paises, ARCHIVO_CSV)
+    print(f" [OK] País '{nombre}' agregado y guardado correctamente.")
 
 
 # ============================================================
@@ -169,11 +172,13 @@ def actualizar_pais(paises):
             print(f"  Población actual:  {p['poblacion']:,} hab.")
             print(f"  Superficie actual: {p['superficie']:,} km²")
 
-            p["poblacion"]  = pedir_entero_positivo("  Nueva población (hab.): ")
-            p["superficie"] = pedir_entero_positivo("  Nueva superficie (km²): ")
+            p["poblacion"] = pedir_entero_positivo(" Nueva población (hab.): ")
+            p["superficie"] = pedir_entero_positivo(" Nueva superficie (km²): ")
 
-            print(f"  [OK] Datos de '{p['nombre']}' actualizados.")
-            return
+guardar_paises(paises, ARCHIVO_CSV)
+
+print(f" [OK] Datos de '{p['nombre']}' actualizados y guardados.")
+return
 
     print(f"  [INFO] No se encontró el país '{nombre}'.")
 
@@ -280,6 +285,9 @@ def menu_filtros(paises):
 # FUNCIONALIDAD 5: ORDENAMIENTOS
 # ============================================================
 
+# Acá sorted() no toca la lista original "paises", sino que
+# devuelve una lista nueva ya ordenada. Por eso es seguro usarla para
+# mostrar distintos órdenes sin perder el orden en que se cargó el CSV.
 def ordenar_paises(paises):
     """
     Ordena y muestra la lista de países según el criterio elegido
