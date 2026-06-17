@@ -14,7 +14,7 @@ Aplicación de consola desarrollada en **Python 3** que permite gestionar un dat
 ## 👩‍💻 Integrantes
 
 |Luca Vaccaro|
-| Guada Molina|
+|Rosario Mallon|
 
 
 ---
