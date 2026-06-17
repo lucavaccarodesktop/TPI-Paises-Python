@@ -151,7 +151,7 @@ def agregar_pais(paises):
         "continente": continente
     })
     guardar_paises(paises, ARCHIVO_CSV)
-    print(f" [OK] País '{nombre}' agregado y guardado correctamente.")
+    print(f"  [OK] País '{nombre}' agregado y guardado correctamente.")
 
 
 # ============================================================
@@ -172,13 +172,12 @@ def actualizar_pais(paises):
             print(f"  Población actual:  {p['poblacion']:,} hab.")
             print(f"  Superficie actual: {p['superficie']:,} km²")
 
-            p["poblacion"] = pedir_entero_positivo(" Nueva población (hab.): ")
-            p["superficie"] = pedir_entero_positivo(" Nueva superficie (km²): ")
+            p["poblacion"] = pedir_entero_positivo("  Nueva población (hab.): ")
+            p["superficie"] = pedir_entero_positivo("  Nueva superficie (km²): ")
 
-guardar_paises(paises, ARCHIVO_CSV)
-
-print(f" [OK] Datos de '{p['nombre']}' actualizados y guardados.")
-return
+            guardar_paises(paises, ARCHIVO_CSV)
+            print(f"  [OK] Datos de '{p['nombre']}' actualizados y guardados.")
+            return
 
     print(f"  [INFO] No se encontró el país '{nombre}'.")
 
