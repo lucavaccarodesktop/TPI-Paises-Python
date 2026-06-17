@@ -1,17 +1,17 @@
-# 🌍 Gestión de Datos de Países en Python
+#  Gestión de Datos de Países en Python
 
 **Trabajo Práctico Integrador (TPI) | Programación 1**  
 **Tecnicatura Universitaria en Programación — UTN (A Distancia)**
 
 ---
 
-## 📋 Descripción
+##  Descripción
 
 Aplicación de consola desarrollada en **Python 3** que permite gestionar un dataset de países del mundo. El sistema lee y escribe datos desde un archivo CSV, y ofrece un menú interactivo con funcionalidades de búsqueda, filtrado, ordenamiento y estadísticas.
 
 ---
 
-## 👩‍💻 Integrantes
+##  Integrantes
 
 |Luca Vaccaro|
 |Rosario Mallon|
@@ -19,14 +19,14 @@ Aplicación de consola desarrollada en **Python 3** que permite gestionar un dat
 
 ---
 
-## 🚀 Requisitos
+##  Requisitos
 
 - Python **3.8** o superior
 - No se requieren librerías externas (solo módulos de la biblioteca estándar: `csv`, `os`)
 
 ---
 
-## ▶️ Cómo ejecutar el programa
+##  Cómo ejecutar el programa
 
 1. Clonar o descargar el repositorio.
 2. Asegurarse de que `paises.py` y `paises.csv` estén en la **misma carpeta**.
@@ -40,7 +40,7 @@ python paises.py
 
 ---
 
-## 📂 Estructura del repositorio
+##  Estructura del repositorio
 
 ```
 TPI-Paises-Python/
@@ -53,7 +53,7 @@ TPI-Paises-Python/
 
 ---
 
-## 🗂️ Dataset (paises.csv)
+##  Dataset (paises.csv)
 
 Cada fila representa un país con los siguientes campos:
 
@@ -73,7 +73,7 @@ Japón,125800000,377975,Asia
 
 ---
 
-## 🧩 Funcionalidades del sistema
+##  Funcionalidades del sistema
 
 ### Menú principal
 
@@ -122,7 +122,7 @@ Busca por coincidencia parcial o exacta (no distingue mayúsculas/minúsculas).
 
 ---
 
-## 💡 Ejemplos de entrada/salida
+##  Ejemplos de entrada/salida
 
 ### Buscar un país
 ```
@@ -163,7 +163,7 @@ Ingrese el continente: Europa
 
 ---
 
-## ⚠️ Validaciones implementadas
+##  Validaciones implementadas
 
 - Campos vacíos bloqueados en toda entrada de usuario.
 - Datos no numéricos detectados y rechazados.
@@ -174,7 +174,15 @@ Ingrese el continente: Europa
 
 ---
 
-## 📎 Documentación y Video
+## Decisiones de diseño
+
+- El programa guarda los cambios en el CSV automáticamente al agregar
+  o actualizar un país, además de al salir, para no perder información
+  si la consola se cierra de forma inesperada.
+
+---
+
+##  Documentación y Video
 
 - 📄 **Informe PDF:** [Enlace al PDF o subido en la raíz del repositorio]
 - 🎥 **Video demostrativo:** [Pegar aquí el link de YouTube/Drive con acceso público]
