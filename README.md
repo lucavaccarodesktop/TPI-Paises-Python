@@ -185,8 +185,7 @@ Ingrese el continente: Europa
 ##  Informe PDF y Video
 
  
-- https://drive.google.com/drive/folders/1gcNTxMBfsAOY69AUQuD3IereC_3c1nCQ?usp=s
-haring
+- https://drive.google.com/drive/folders/1gcNTxMBfsAOY69AUQuD3IereC_3c1nCQ?usp=sharing
 
 ---
 
