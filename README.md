@@ -182,10 +182,11 @@ Ingrese el continente: Europa
 
 ---
 
-##  Documentación y Video
+##  Informe PDF y Video
 
-- 📄 **Informe PDF:** [Enlace al PDF o subido en la raíz del repositorio]
-- 🎥 **Video demostrativo:** [Pegar aquí el link de YouTube/Drive con acceso público]
+ 
+- https://drive.google.com/drive/folders/1gcNTxMBfsAOY69AUQuD3IereC_3c1nCQ?usp=s
+haring
 
 ---
 
